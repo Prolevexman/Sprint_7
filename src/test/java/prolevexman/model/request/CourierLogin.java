@@ -13,7 +13,7 @@ public class CourierLogin {
     public CourierLogin() {
     }
 
-    public CourierLogin getFrom(Courier courier) {
+    public static CourierLogin getFrom(Courier courier) {
         return new CourierLogin(courier.getLogin(), courier.getPassword());
     }
 
