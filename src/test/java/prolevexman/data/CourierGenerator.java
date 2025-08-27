@@ -8,7 +8,7 @@ import java.util.Locale;
 public class CourierGenerator {
     private static final Faker faker = new Faker(new Locale("en"));
 
-    public static Courier randomCourier() {
+    public static Courier randomCourierAllFields() {
         String firstName = faker.name().firstName();
         String login = faker.name().username();
         String password = faker.internet().password(8,12);
